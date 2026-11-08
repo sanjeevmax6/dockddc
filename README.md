@@ -123,7 +123,3 @@ defaults write io.github.dockddc hubPort -int 0   # then 1, 2, 3
 - VESA MCCS, the Monitor Control Command Set, for VCP codes
 - [m1ddc](https://github.com/waydabber/m1ddc) and [MonitorControl](https://github.com/MonitorControl/MonitorControl), for DDC on Apple Silicon
 - [MonitorControl issue 1403](https://github.com/monitorcontrol/monitorcontrol/issues/1403), about DDC through MST docks on Mac
-
-## License
-
-MIT
