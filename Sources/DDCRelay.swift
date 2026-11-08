@@ -8,14 +8,12 @@ enum DDCRelay {
     struct Config {
         var hubPort: UInt8
         var inputPrimary: UInt16
-        var inputSecondary: UInt16
 
         static var current: Config {
             let d = UserDefaults.standard
             return Config(
                 hubPort: UInt8(clamping: d.object(forKey: "hubPort") as? Int ?? 2),
-                inputPrimary: UInt16(clamping: d.object(forKey: "inputPrimary") as? Int ?? 15),
-                inputSecondary: UInt16(clamping: d.object(forKey: "inputSecondary") as? Int ?? 17)
+                inputPrimary: UInt16(clamping: d.object(forKey: "inputPrimary") as? Int ?? 15)
             )
         }
     }
